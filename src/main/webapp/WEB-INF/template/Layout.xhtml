@@ -42,6 +42,10 @@
 				<p:menuitem value="Pessoas" />
 				<p:menuitem value="Lançamentos" action="/ConsultaLancamentos?faces-redirect=true" />
 			</p:submenu>
+			<p:submenu label="Relatórios">
+				<p:menuitem value="Pessoas 1" action="#{relatorioPessoasBean.relatorioBD}" ajax="false" target="_blank"/>
+				<p:menuitem value="Pessoas 2" action="#{relatorioPessoasBean.relatorioLista}" ajax="false" target="_blank"/>
+			</p:submenu>
 			<p:submenu label="Sistema">
 				<p:menuitem value="Sair" action="#{loginBean.logout}" />
 			</p:submenu>
